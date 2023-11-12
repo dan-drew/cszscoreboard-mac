@@ -9,13 +9,13 @@ import SwiftUI
 import WebKit
 
 
-struct ContentView: View {
+struct BoothContentView: View {
     var body: some View {
-        BoothView().border(Color.red, width: 10)
+        BoothView()
     }
 }
 
 #Preview {
-    ContentView()
+    BoothContentView()
 }
 

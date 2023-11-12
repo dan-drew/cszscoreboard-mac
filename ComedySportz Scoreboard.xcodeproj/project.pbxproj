@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		435473652B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */; };
-		435473672B00B39300110FF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473662B00B39300110FF7 /* ContentView.swift */; };
+		435473672B00B39300110FF7 /* BoothContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473662B00B39300110FF7 /* BoothContentView.swift */; };
 		435473692B00B39400110FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435473682B00B39400110FF7 /* Assets.xcassets */; };
 		4354736C2B00B39400110FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354736B2B00B39400110FF7 /* Preview Assets.xcassets */; };
 		435473742B00B91900110FF7 /* BoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473732B00B91900110FF7 /* BoothView.swift */; };
+		435473782B00C2EE00110FF7 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473772B00C2EE00110FF7 /* LiveView.swift */; };
+		4354737A2B00C35200110FF7 /* LiveContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473792B00C35200110FF7 /* LiveContentView.swift */; };
+		4354737C2B00CACF00110FF7 /* WebConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354737B2B00CACF00110FF7 /* WebConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		435473612B00B39300110FF7 /* ComedySportz Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ComedySportz Scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComedySportz_ScoreboardApp.swift; sourceTree = "<group>"; };
-		435473662B00B39300110FF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		435473662B00B39300110FF7 /* BoothContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothContentView.swift; sourceTree = "<group>"; };
 		435473682B00B39400110FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4354736B2B00B39400110FF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4354736D2B00B39400110FF7 /* ComedySportz_Scoreboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ComedySportz_Scoreboard.entitlements; sourceTree = "<group>"; };
 		435473732B00B91900110FF7 /* BoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothView.swift; sourceTree = "<group>"; };
+		435473772B00C2EE00110FF7 /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
+		435473792B00C35200110FF7 /* LiveContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveContentView.swift; sourceTree = "<group>"; };
+		4354737B2B00CACF00110FF7 /* WebConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */,
-				435473662B00B39300110FF7 /* ContentView.swift */,
+				435473662B00B39300110FF7 /* BoothContentView.swift */,
 				435473682B00B39400110FF7 /* Assets.xcassets */,
 				4354736D2B00B39400110FF7 /* ComedySportz_Scoreboard.entitlements */,
 				4354736A2B00B39400110FF7 /* Preview Content */,
 				435473732B00B91900110FF7 /* BoothView.swift */,
+				435473772B00C2EE00110FF7 /* LiveView.swift */,
+				435473792B00C35200110FF7 /* LiveContentView.swift */,
+				4354737B2B00CACF00110FF7 /* WebConfig.swift */,
 			);
 			path = "ComedySportz Scoreboard";
 			sourceTree = "<group>";
@@ -142,7 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435473672B00B39300110FF7 /* ContentView.swift in Sources */,
+				435473782B00C2EE00110FF7 /* LiveView.swift in Sources */,
+				4354737C2B00CACF00110FF7 /* WebConfig.swift in Sources */,
+				435473672B00B39300110FF7 /* BoothContentView.swift in Sources */,
+				4354737A2B00C35200110FF7 /* LiveContentView.swift in Sources */,
 				435473652B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift in Sources */,
 				435473742B00B91900110FF7 /* BoothView.swift in Sources */,
 			);

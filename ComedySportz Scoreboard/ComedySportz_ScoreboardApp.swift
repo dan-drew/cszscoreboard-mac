@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct ComedySportz_ScoreboardApp: App {
+    @Environment(\.openWindow) private var openWindow
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }.defaultSize(width: 800, height: 600).defaultPosition(UnitPoint(x: 20, y: 20))
+            BoothContentView().onAppear(perform: {
+                openWindow(id: "live")
+            })
+        }.defaultSize(width: 800, height: 600)
+        Window("TV", id: "live") {
+            LiveContentView()
+        }.defaultSize(width: 1000, height: 800).windowStyle(.hiddenTitleBar)
     }
 }
