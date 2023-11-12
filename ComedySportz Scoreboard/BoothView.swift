@@ -1,5 +1,5 @@
 //
-//  BoothView.swift
+//  ContentView.swift
 //  ComedySportz Scoreboard
 //
 //  Created by user247872 on 11/11/23.
@@ -8,19 +8,31 @@
 import SwiftUI
 import WebKit
 
-struct BoothView: NSViewRepresentable {
-    func makeNSView(context: NSViewRepresentableContext<BoothView>) -> WKWebView {
-        let webview = WKWebView(frame: CGRect.null, configuration: WebConfig().config)
 
-        let request = URLRequest(url: URL(string: "https://cszscoreboard.ddrew.com")!, cachePolicy: .reloadRevalidatingCacheData)
-        webview.load(request)
-
-        return webview
+struct BoothView: View {
+    static let url = "https://cszscoreboard.ddrew.com"
+    
+    var body: some View {
+        WebView(BoothView.url)
     }
-
-    func updateNSView(_ webview: WKWebView, context: NSViewRepresentableContext<BoothView>) {
-        //let request = URLRequest(url: self.url, cachePolicy: .returnCacheDataElseLoad)
-        //webview.load(request)
+    
+    static func create() -> some View {
+        return BoothView()
     }
+    
+    static func window() -> NSWindow? {
+        return NSApp.windows.first(where: { it in
+            it.identifier?.rawValue == "booth"
+        })
+    }
+    
+    static func closed() -> Bool {
+        let window = self.window()!
+        return !window.isVisible && !window.isMiniaturized
+    }
+}
+
+#Preview {
+    BoothView()
 }
 

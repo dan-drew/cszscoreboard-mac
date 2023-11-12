@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430323142B0179C6003F30DD /* FullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430323132B0179C6003F30DD /* FullScreen.swift */; };
 		435473652B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */; };
-		435473672B00B39300110FF7 /* BoothContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473662B00B39300110FF7 /* BoothContentView.swift */; };
+		435473672B00B39300110FF7 /* BoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473662B00B39300110FF7 /* BoothView.swift */; };
 		435473692B00B39400110FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435473682B00B39400110FF7 /* Assets.xcassets */; };
 		4354736C2B00B39400110FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354736B2B00B39400110FF7 /* Preview Assets.xcassets */; };
-		435473742B00B91900110FF7 /* BoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473732B00B91900110FF7 /* BoothView.swift */; };
-		435473782B00C2EE00110FF7 /* LiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473772B00C2EE00110FF7 /* LiveView.swift */; };
-		4354737A2B00C35200110FF7 /* LiveContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473792B00C35200110FF7 /* LiveContentView.swift */; };
+		435473742B00B91900110FF7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473732B00B91900110FF7 /* WebView.swift */; };
 		4354737C2B00CACF00110FF7 /* WebConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354737B2B00CACF00110FF7 /* WebConfig.swift */; };
+		43F58F7A2B03CD9F004EA198 /* TVWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F58F792B03CD9F004EA198 /* TVWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		430323132B0179C6003F30DD /* FullScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreen.swift; sourceTree = "<group>"; };
 		435473612B00B39300110FF7 /* ComedySportz Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ComedySportz Scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComedySportz_ScoreboardApp.swift; sourceTree = "<group>"; };
-		435473662B00B39300110FF7 /* BoothContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothContentView.swift; sourceTree = "<group>"; };
+		435473662B00B39300110FF7 /* BoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothView.swift; sourceTree = "<group>"; };
 		435473682B00B39400110FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4354736B2B00B39400110FF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4354736D2B00B39400110FF7 /* ComedySportz_Scoreboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ComedySportz_Scoreboard.entitlements; sourceTree = "<group>"; };
-		435473732B00B91900110FF7 /* BoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothView.swift; sourceTree = "<group>"; };
-		435473772B00C2EE00110FF7 /* LiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveView.swift; sourceTree = "<group>"; };
-		435473792B00C35200110FF7 /* LiveContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveContentView.swift; sourceTree = "<group>"; };
+		435473732B00B91900110FF7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		4354737B2B00CACF00110FF7 /* WebConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebConfig.swift; sourceTree = "<group>"; };
+		43F58F792B03CD9F004EA198 /* TVWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,14 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */,
-				435473662B00B39300110FF7 /* BoothContentView.swift */,
+				435473662B00B39300110FF7 /* BoothView.swift */,
 				435473682B00B39400110FF7 /* Assets.xcassets */,
 				4354736D2B00B39400110FF7 /* ComedySportz_Scoreboard.entitlements */,
 				4354736A2B00B39400110FF7 /* Preview Content */,
-				435473732B00B91900110FF7 /* BoothView.swift */,
-				435473772B00C2EE00110FF7 /* LiveView.swift */,
-				435473792B00C35200110FF7 /* LiveContentView.swift */,
+				435473732B00B91900110FF7 /* WebView.swift */,
 				4354737B2B00CACF00110FF7 /* WebConfig.swift */,
+				430323132B0179C6003F30DD /* FullScreen.swift */,
+				43F58F792B03CD9F004EA198 /* TVWindow.swift */,
 			);
 			path = "ComedySportz Scoreboard";
 			sourceTree = "<group>";
@@ -151,12 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435473782B00C2EE00110FF7 /* LiveView.swift in Sources */,
+				430323142B0179C6003F30DD /* FullScreen.swift in Sources */,
 				4354737C2B00CACF00110FF7 /* WebConfig.swift in Sources */,
-				435473672B00B39300110FF7 /* BoothContentView.swift in Sources */,
-				4354737A2B00C35200110FF7 /* LiveContentView.swift in Sources */,
+				435473672B00B39300110FF7 /* BoothView.swift in Sources */,
 				435473652B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift in Sources */,
-				435473742B00B91900110FF7 /* BoothView.swift in Sources */,
+				43F58F7A2B03CD9F004EA198 /* TVWindow.swift in Sources */,
+				435473742B00B91900110FF7 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,20 +286,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "ComedySportz Scoreboard/ComedySportz_Scoreboard.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ComedySportz Scoreboard/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ComedySportz Scoreboard";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.comedysportz.ComedySportz-Scoreboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comedysportz.scoreboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,20 +314,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = "ComedySportz Scoreboard/ComedySportz_Scoreboard.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ComedySportz Scoreboard/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
+				ENABLE_PREVIEWS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "ComedySportz Scoreboard";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.comedysportz.ComedySportz-Scoreboard";
+				PRODUCT_BUNDLE_IDENTIFIER = com.comedysportz.scoreboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
