@@ -9,27 +9,44 @@ import SwiftUI
 
 @main
 struct ComedySportz_ScoreboardApp: App {
-    @Environment(\.openWindow) private var openWindow
+    static public let DOCUMENTATION_URL = URL(string: "https://docs.google.com/document/d/13iQDgkSyzAIu081jAqJ1sTHh7XaiV4Ny3FXpckTTWuo/edit#heading=h.3wanvi147w7")!
+    
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         Window("Booth", id: "booth") {
             BoothView.create()
-        }.defaultSize(width: 1200, height: 800)
+        }
+        .defaultSize(width: 1200, height: 800)
+        .commands {
+            CommandGroup(replacing: .windowList) {
+                Button("Booth") {
+                    BoothView.show()
+                }
+                Menu("TV") {
+                    ForEach(ScreenInfo.all) { screen in
+                        Button(screen.displayName, action: {
+                            appDelegate.setTVScreen(screen)
+                        }).menuIndicator(.visible)
+                    }
+                }
+            }
+            CommandGroup(replacing: .help, addition: {
+                Link("Documentation", destination: ComedySportz_ScoreboardApp.DOCUMENTATION_URL)
+            })
+        }
     }
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     var launched = false
-
-    @Environment(\.openWindow) private var openWindow
+    
     private var tvWindow: TVWindow?
-
+    
     func applicationDidFinishLaunching(_ notification: Notification) {
         self.launched = true
-        //hideTitleBar()
+        NSApp.applicationIconImage = NSImage(named: "AppIcon")
         cleanupMenu()
-        //openWindow(id: "live")
         tvWindow = TVWindow()
     }
     
@@ -37,10 +54,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
     
-    func applicationDidUpdate(_ notification: Notification) {	
-        if launched && BoothView.closed() {
+    func applicationDidUpdate(_ notification: Notification) {
+        if launched && BoothView.closed {
             quit()
+        } else {
+            cleanupMenu()
         }
+    }
+    
+    func setTVScreen(_ screen: ScreenInfo) {
+        tvWindow?.screen = screen
     }
     
     func quit() {
@@ -48,13 +71,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func cleanupMenu() {
-        let unwantedMenus = ["File","Edit","View","Help"]
-                
+        let unwantedMenus: [String] = ["File","Edit","View"]
+        
         unwantedMenus.forEach { menu in
             NSApp.mainMenu?.item(withTitle: menu).map {
                 NSApp.mainMenu?.removeItem($0)
             }
         }
-
     }
 }

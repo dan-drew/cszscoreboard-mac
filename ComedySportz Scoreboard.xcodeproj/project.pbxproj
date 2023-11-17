@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		430323142B0179C6003F30DD /* FullScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430323132B0179C6003F30DD /* FullScreen.swift */; };
+		434C0DAC2B067B4800D66DD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435473682B00B39400110FF7 /* Assets.xcassets */; };
 		435473652B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */; };
 		435473672B00B39300110FF7 /* BoothView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473662B00B39300110FF7 /* BoothView.swift */; };
-		435473692B00B39400110FF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435473682B00B39400110FF7 /* Assets.xcassets */; };
 		4354736C2B00B39400110FF7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4354736B2B00B39400110FF7 /* Preview Assets.xcassets */; };
 		435473742B00B91900110FF7 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435473732B00B91900110FF7 /* WebView.swift */; };
 		4354737C2B00CACF00110FF7 /* WebConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4354737B2B00CACF00110FF7 /* WebConfig.swift */; };
+		439413572B09EB6900F98E67 /* ScreenInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439413562B09EB6900F98E67 /* ScreenInfo.swift */; };
 		43F58F7A2B03CD9F004EA198 /* TVWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F58F792B03CD9F004EA198 /* TVWindow.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,11 +23,12 @@
 		435473612B00B39300110FF7 /* ComedySportz Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ComedySportz Scoreboard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		435473642B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComedySportz_ScoreboardApp.swift; sourceTree = "<group>"; };
 		435473662B00B39300110FF7 /* BoothView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoothView.swift; sourceTree = "<group>"; };
-		435473682B00B39400110FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		435473682B00B39400110FF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "ComedySportz Scoreboard/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		4354736B2B00B39400110FF7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4354736D2B00B39400110FF7 /* ComedySportz_Scoreboard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ComedySportz_Scoreboard.entitlements; sourceTree = "<group>"; };
 		435473732B00B91900110FF7 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		4354737B2B00CACF00110FF7 /* WebConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebConfig.swift; sourceTree = "<group>"; };
+		439413562B09EB6900F98E67 /* ScreenInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenInfo.swift; sourceTree = "<group>"; };
 		43F58F792B03CD9F004EA198 /* TVWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +71,7 @@
 				4354737B2B00CACF00110FF7 /* WebConfig.swift */,
 				430323132B0179C6003F30DD /* FullScreen.swift */,
 				43F58F792B03CD9F004EA198 /* TVWindow.swift */,
+				439413562B09EB6900F98E67 /* ScreenInfo.swift */,
 			);
 			path = "ComedySportz Scoreboard";
 			sourceTree = "<group>";
@@ -139,8 +142,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434C0DAC2B067B4800D66DD5 /* Assets.xcassets in Resources */,
 				4354736C2B00B39400110FF7 /* Preview Assets.xcassets in Resources */,
-				435473692B00B39400110FF7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				430323142B0179C6003F30DD /* FullScreen.swift in Sources */,
+				439413572B09EB6900F98E67 /* ScreenInfo.swift in Sources */,
 				4354737C2B00CACF00110FF7 /* WebConfig.swift in Sources */,
 				435473672B00B39300110FF7 /* BoothView.swift in Sources */,
 				435473652B00B39300110FF7 /* ComedySportz_ScoreboardApp.swift in Sources */,
@@ -216,10 +220,10 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -273,7 +277,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.6;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -301,6 +305,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.comedysportz.scoreboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,6 +334,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.comedysportz.scoreboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";

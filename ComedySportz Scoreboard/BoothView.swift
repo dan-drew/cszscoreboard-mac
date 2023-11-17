@@ -20,15 +20,22 @@ struct BoothView: View {
         return BoothView()
     }
     
-    static func window() -> NSWindow? {
+    static var window: NSWindow? {
         return NSApp.windows.first(where: { it in
-            it.identifier?.rawValue == "booth"
+            let id = it.identifier?.rawValue
+            return id == nil ? false : id!.starts(with: "booth")
         })
     }
     
-    static func closed() -> Bool {
-        let window = self.window()!
-        return !window.isVisible && !window.isMiniaturized
+    static var closed: Bool {
+        let window = self.window
+        return window == nil || !(window!.isVisible || window!.isMiniaturized)
+    }
+    
+    static func show() {
+        guard let window = self.window else { return }
+        window.setIsVisible(true)
+        window.setIsMiniaturized(false)
     }
 }
 

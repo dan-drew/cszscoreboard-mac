@@ -6,21 +6,34 @@
 //
 
 import SwiftUI
+import OSLog
 
 struct TVWindow {
     static let url = "https://cszscoreboard.ddrew.com/live"
 
-    let window: NSWindow
-    let view: WebView
+    private let window: NSWindow
+    private let view: WebView
+    private var _screen: ScreenInfo?
     
     init() {
-        let screen = FullScreen.findTargetScreen()
-        let rect = screen.frame
-        window = NSWindow(contentRect: rect, styleMask: [.borderless, .fullSizeContentView], backing: .buffered, defer: false, screen: screen)
-        window.setIsVisible(true)
+        let secondary = ScreenInfo.secondary
+        window = NSWindow(contentRect: secondary.rect, styleMask: [.borderless, .fullSizeContentView], backing: .buffered, defer: false)
         
         view = WebView(TVWindow.url)
         window.contentView = view.makeNSView()
+        screen = secondary
+    }
+    
+    var screen: ScreenInfo {
+        get { return _screen! }
+        set {
+            let logger = Logger()
+            self._screen = newValue
+            logger.info("Setting TV screen to \(newValue.displayName, privacy: .public)")
+            window.setFrameOrigin(newValue.screen.frame.origin)
+            window.setFrame(newValue.screen.frame, display: true)
+            window.setIsVisible(true)
+        }
     }
 }
 	
